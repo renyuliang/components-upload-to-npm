@@ -1,9 +1,11 @@
 // 引入所有组件然后统一导出
 import sumFuntion from './sumFuntion/sum-function'
+import subFuntion from './subFunction/sub-function'
 import doubleFunction from './doubleFunction/double-function'
 
 const components = {
   sumFuntion,
+  subFuntion,
   doubleFunction
 }
 
@@ -22,5 +24,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   sumFuntion,
+  subFuntion,
   doubleFunction
 }
